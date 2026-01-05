@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lynn Huang | 个人主页</title>
+    <style>
+        :root { --main-green: #10B981; --bg-black: #050505; --card-bg: #0f0f0f; }
+        body { background-color: var(--bg-black); color: #e5e7eb; font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; margin: 0; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+        
+        /* 模糊淡入动画 */
+        @keyframes blurIn {
+            from { filter: blur(10px); opacity: 0; transform: translateY(20px); }
+            to { filter: blur(0); opacity: 1; transform: translateY(0); }
+        }
+        header { text-align: center; margin-bottom: 100px; animation: blurIn 1.5s ease-out; }
+        h1 { font-size: clamp(3rem, 10vw, 5rem); margin: 0; letter-spacing: -2px; }
+        .highlight { color: var(--main-green); }
+        
+        .section-title { color: var(--main-green); font-size: 0.8rem; letter-spacing: 3px; border-bottom: 1px solid #222; padding-bottom: 10px; margin: 60px 0 30px; }
+        .card { background: var(--card-bg); border: 1px solid #1f2937; border-radius: 16px; padding: 30px; margin-bottom: 20px; transition: 0.3s; }
+        .card:hover { border-color: var(--main-green); transform: translateY(-5px); }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .tag { display: inline-block; padding: 4px 12px; border-radius: 20px; background: rgba(16, 185, 129, 0.1); color: var(--main-green); font-size: 0.75rem; margin: 0 5px 5px 0; }
+        
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LYNN <span class="highlight">HUANG</span></h1>
+            <p>复旦大学 · 暨南大学 [cite: 2, 6] | 产品运营 & 品牌传播</p>
+            <p style="color: #6b7280; font-size: 0.9rem;">15622238644 | huangly202212@163.com [cite: 4, 5]</p>
+        </header>
+
+        <section>
+            <div class="section-title">EDUCATION</div>
+            <div style="display: flex; justify-content: space-between;">
+                <strong>复旦大学 (硕士) / 暨南大学 (学士) [cite: 2, 6, 7]</strong>
+                <span class="highlight">GPA 4.24/5.00 (Top 1%) [cite: 7]</span>
+            </div>
+            <p style="color: #9ca3af;">新闻学(辅修经济学) | 优秀毕业生 [cite: 7]</p>
+        </section>
+
+        <section>
+            <div class="section-title">FEATURED EXPERIENCE</div>
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                    <h3 style="margin: 0;">XTransfer · 产品运营实习生 [cite: 8, 9]</h3>
+                    <span style="color: #6b7280;">2025.10 - 2026.01 [cite: 12]</span>
+                </div>
+                <ul>
+                    <li>独立策划汇率收集方案，单日收款新高突破 <span class="highlight">3000万</span> [cite: 13]</li>
+                    <li>深度参与墨西哥项目，推动收款量同比增长 <span class="highlight">342%</span> </li>
+                    <li>调研新市场，将验证周期从44天缩短至 <span class="highlight">22天</span> [cite: 14]</li>
+                </ul>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <h4>罗德传播集团 [cite: 16]</h4>
+                    <p style="font-size: 0.9rem; color: #9ca3af;">新媒体运营实习生：运营账号赞藏累计 <span class="highlight">8w+</span>，互动率提升 20% [cite: 17, 19, 20]。</p>
+                </div>
+                <div class="card">
+                    <h4>BCW 博雅公关 [cite: 21]</h4>
+                    <p style="font-size: 0.9rem; color: #9ca3af;">品牌传播实习生：独立负责西门子月度报告 [cite: 22, 25]，协助蔡司、屈臣氏方案策划 [cite: 24]。</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">SKILLS & PROJECTS</div>
+            <div>
+                <span class="tag">SQL / Python / SPSS </span>
+                <span class="tag">CET-6 (564) [cite: 48]</span>
+                <span class="tag">PS / PR / Canvas [cite: 49]</span>
+            </div>
+            <p style="font-size: 0.9rem; color: #9ca3af; margin-top: 20px;">
+                • 粤港澳大湾区大学生创意文化节 - 学生总负责人 [cite: 35, 38]<br>
+                • 玉米新农人项目 - 抖音作品曝光量突破 <span class="highlight">10万+</span> [cite: 41, 44]
+            </p>
+        </section>
+    </div>
+</body>
+</html>
